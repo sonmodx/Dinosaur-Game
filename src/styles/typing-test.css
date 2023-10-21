@@ -1,0 +1,25 @@
+.typing-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.typing-test .wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.typing-test .wrapper > * {
+    grid-area: 1 / -1;
+}
+
+.typing-test .wrapper input {
+    width: 100%;
+    opacity: 0;
+    outline: transparent;
+    z-index: 99;
+}
+
+
+

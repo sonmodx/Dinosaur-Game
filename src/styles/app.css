@@ -4,28 +4,37 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color : #121212;
+  --font-color : #fff;
+}
+
 .app {
   min-height: 100vh;
   min-height: 100dvh;
   font-family: 'Sometype Mono', monospace;
-  background-color: #121212;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 .app .container {
+  height: 100vh;
   width: min(90%, 60rem);
   margin-inline: auto;
   text-align: center;
 }
 
-.app .container > .header {
-  font-size: clamp(2rem, 1rem + 2vw, 4rem);
-  padding: .5em;
-  border: 1px solid red;
+.app .container > .wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px 1fr 50px; 
 }
 
-.app .container .wrapper {
-  display: grid;
-  place-items: center;
-  border: 1px solid red;
+.app .container .wrapper .header {
+  font-size: clamp(2rem, 1rem + 2vw, 4rem);
+  padding: .5em;
+  border: 3px solid #fff;
+  border-top: none;
+  border-radius: 0 0 1em 1em;
 }
+

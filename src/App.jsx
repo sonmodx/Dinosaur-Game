@@ -5,9 +5,11 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <header className="header">Dinosaur Typing</header>
         <div className="wrapper">
+          <header className="header">Dinosaur Typing</header>
+
           <TypingTest />
+          <footer className="footer">Made by sonmodx</footer>
         </div>
       </div>
     </div>
