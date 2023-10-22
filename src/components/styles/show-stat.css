@@ -1,0 +1,33 @@
+.show-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.show-stat .stat {
+    font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+}
+
+.show-stat .row {
+    display: flex;
+    gap: 2em;
+    font-size: clamp(0.75rem, 0.75rem + 1vw, 2rem);
+    font-weight: bolder;
+}
+
+.show-stat .row > * > span {
+    color: goldenrod;
+}
+
+.show-stat .back-btn {
+    cursor: pointer;
+    padding: 1em 4em;
+    border-radius: 1em;
+    font-family: 'Sometype Mono', monospace;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.show-stat .back-btn:is(:hover, :focus-visible) {
+    opacity: 0.8;
+}

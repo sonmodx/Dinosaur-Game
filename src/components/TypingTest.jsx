@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "../styles/typing-test.css";
+import "./styles/typing-test.css";
 import Letter from "./Letter";
 import ShowStat from "./ShowStat";
 const TypingTest = () => {
   const [userInput, setUserInput] = useState([]);
-  const correctText = "but school ";
+  const correctText = "but school everyday is good for you too my love";
   const [isFinish, setIsFinish] = useState(false);
   const [selectSeconds, setSelectSeconds] = useState(5);
   const [seconds, setSeconds] = useState(5);
@@ -41,13 +41,16 @@ const TypingTest = () => {
   }, [userInput]);
   if (isFinish)
     return (
-      <ShowStat
-        clearSetting={clearSetting}
-        userInput={userInput?.join("")}
-        correctText={correctText}
-        seconds={selectSeconds - seconds}
-      />
+      <div className="typing-test">
+        <ShowStat
+          clearSetting={clearSetting}
+          userInput={userInput?.join("")}
+          correctText={correctText}
+          seconds={selectSeconds - seconds}
+        />
+      </div>
     );
+
   return (
     <div className="typing-test">
       <p className="time">{seconds}</p>

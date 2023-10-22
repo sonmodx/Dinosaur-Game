@@ -1,5 +1,5 @@
 import TypingTest from "./components/TypingTest";
-import "./styles/app.css";
+import "./app.css";
 
 function App() {
   return (

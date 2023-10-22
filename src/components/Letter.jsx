@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/letter.css";
+import "./styles/letter.css";
 const Letter = ({ letter, index, userInput }) => {
   const indexCaret = userInput?.length;
 
