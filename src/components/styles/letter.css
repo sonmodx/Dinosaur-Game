@@ -21,15 +21,15 @@
 
 @keyframes caret-blink {
     0% {
-        opacity: 0;
-        transform: scaleX(0);
+       
+        transform: scaleY(1);
     }
     50% {
-        opacity: 1;
-        transform: scaleX(1);
+    
+        transform: scaleY(0);
     }
     100% {
-        opacity: 0;
-        transform: scaleX(0);
+        
+        transform: scaleY(1);
     }
 }

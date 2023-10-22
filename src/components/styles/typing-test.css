@@ -5,9 +5,19 @@
     flex-direction: column;
 }
 
+.typing-test .type-to-start {
+    color: gainsboro;
+    animation: text-blink 1s ease-in-out infinite;
+}
+
 .typing-test .wrapper {
     display: grid;
     place-items: center;
+    margin-block: 1rem;
+}
+
+.typing-test .wrapper.blur {
+    filter: blur(10px);
 }
 
 .typing-test .wrapper > * {
@@ -19,6 +29,18 @@
     opacity: 0;
     outline: transparent;
     z-index: 99;
+}
+
+@keyframes text-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
